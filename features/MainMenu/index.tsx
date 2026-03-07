@@ -32,6 +32,12 @@ const MainMenu = () => {
 
   const { theme, setTheme, isGlassMode } = useThemePreferences();
 
+  const characterTileClassName = clsx(
+    'inline-flex h-11 w-11 items-center justify-center rounded-xl bg-(--background-color)',
+    'border border-(--border-color) text-(--secondary-color) shadow-sm',
+    'transition-colors group-hover:border-(--main-color)/60',
+  );
+
   const { playClick } = useClick();
 
   const expandDecorations = useDecorationsStore(
@@ -255,7 +261,7 @@ const MainMenu = () => {
                 <button
                   className={clsx(
                     'flex h-full w-full text-2xl',
-                    'items-center justify-center gap-1.5 border-(--border-color)',
+                    'items-center justify-center gap-3 border-(--border-color)',
                     'md:border-b-4',
                     'py-8',
                     'group',
@@ -268,11 +274,11 @@ const MainMenu = () => {
                 >
                   <span
                     lang='ja'
-                    className='font-normal text-(--secondary-color)'
+                    className={characterTileClassName}
                   >
                     {link.name_ja}
                   </span>
-                  <span lang='en' className=''>
+                  <span lang='en' className='leading-none'>
                     {link.name_en}
                   </span>
                 </button>
