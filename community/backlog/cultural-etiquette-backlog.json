@@ -267,7 +267,7 @@
     "note": "駅・店頭では順番厳守。",
     "id": 30,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "situation": "贈り物 2",
@@ -330,7 +330,7 @@
     "note": "ゴミ箱が少ない地域がある。",
     "id": 37,
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "situation": "お辞儀 2",
@@ -356,7 +356,7 @@
     "dont": "匂いの強いものを持参する",
     "note": "分けやすさが好まれる。",
     "id": 40,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
